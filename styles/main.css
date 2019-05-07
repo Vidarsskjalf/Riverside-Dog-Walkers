@@ -7,6 +7,23 @@ body {
 th {
     text-align: right;
 }
+
+p {
+  padding-left: 15px;
+}
+
+h1{
+  padding-left: 15px;
+}
+
+h2 {
+  padding-left: 15px;
+}
+
+h3 {
+  padding-left: 15px;
+}
+
 .center {
     display: block;
     margin-left: 0;
