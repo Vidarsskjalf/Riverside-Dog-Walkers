@@ -6,9 +6,11 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Riverside Dog Walkers</title>
        <link rel="stylesheet" href=".//styles/main.css">
+       <link rel="stylesheet" href=".//styles/services.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <header>
-        <h1>Riverside Dog Walkers</h1>
+        <h1 class="header"><span>Riverside</span> Dog Walkers<h1>
     </header>
         <body>
 
@@ -20,27 +22,37 @@
                             <li><a href="hours.html">Hours</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                             <li class="right"><a href="login.html">Login</a></li>
+                            <div class="search-container">
+                                    <form action="/action_page.php">
+                                      <input type="text" placeholder="Search.." name="search">
+                                      <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                  </div>
                         </ul>
                     </nav>
 
-        <div id="Services">
-            <h2><u>Services</u></h2>
-                <h3>Walks</h3>
-                    <p>$20 per hour<br><em>additional dogs cost $12 each</em></p>
-                
-                <h3>Day Care</h3> 
-                    <p>$15 per day<br><em>Day Care Packages Available</em></p>
-                
-                <h3>Bath/Nail Trim</h3>
-                    <p>$10 for bath $5 for nail trim</p>
-                
-                <h3>CBD Treatment</h3>
-                    <p>CBD treats</p>
+<h2>Services</h2>
+<div class="wrapper">
+    <div>
+        <h3>Walks</h3>
+            <p>$20 per hour<br>additional dogs cost $12 each</p>
+        
+        <h3>Day Care</h3> 
+            <p>$15 per day<br><em>Day Care Packages Available</em></p>
 
-                <h3>Items to bring</h3>
-        </div>
-       
-    </body>
+        <h3>Items to bring</h3>
+            <p>Stuff</p>        
+    </div>
+    <div>
+        <h3>Bath/Nail Trim</h3>
+            <p>$10 for bath $5 for nail trim</p>
+
+        <h3>CBD Treatment</h3>
+            <p>CBD treats</p>
+    </div>
+</div>
+
+</body>
     
         <footer class="footer">
         <!--Copyright Section-->
