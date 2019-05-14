@@ -1,9 +1,16 @@
 .wrapper {
-    display: grid;
-    grid-template-columns: 30% 30%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 1em;
 }
 
 .wrapper > div {
-    background: rgb(138, 139, 141);
-    padding: 1em;
+  background: rgb(138, 139, 141);
+  padding: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
 }

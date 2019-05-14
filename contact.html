@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Riverside Dog Walkers</title>
        <link rel="stylesheet" href=".//styles/main.css">
+       <link rel="stylesheet" href=".//styles/mobile.css">
        <link rel="stylesheet" href=".//styles/contact.css">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -19,17 +20,9 @@
                 <nav>
                         <ul class="topnav">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="services.html">Services</a></li>
-                            <li><a href="hours.html">Hours</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
                             <li><a class="active" href="contact.html">Contact Us</a></li>
-                            <li class="right"><a href="login.html">Login</a></li>
-                            <div class="search-container">
-                                    <form action="/action_page.php">
-                                      <input type="text" placeholder="Search.." name="search">
-                                      <button type="submit"><i class="fa fa-search"></i></button>
-                                    </form>
-                                  </div>
                         </ul>
                     </nav>
 
@@ -44,39 +37,37 @@
                               </div>
                               <div class="contact">
                                 <h3>Email Us</h3>
-                                <form>
+                                <div class="alert">Your message has been sent</div>
+                                <form id="contactForm">
                                   <p>
                                     <label>Name</label>
-                                    <input type="text" name="name">
+                                    <input type="text" name="name" id="name" required>
                                   </p>
                                   <p>
                                     <label>Company</label>
-                                    <input type="text" name="company">
+                                    <input type="text" name="company" id="company">
                                   </p>
                                   <p>
                                     <label>Email Address</label>
-                                    <input type="email" name="email">
+                                    <input type="email" name="email" id="email" required>
                                   </p>
                                   <p>
                                     <label>Phone Number</label>
-                                    <input type="text" name="phone">
+                                    <input type="text" name="phone" id="phone">
                                   </p>
                                   <p class="full">
                                     <label>Message</label>
-                                    <textarea name="message" rows="5"></textarea>
+                                    <textarea name="message" rows="5" id="message"></textarea>
                                   </p>
                                   <p class="full">
-                                    <button>Submit</button>
+                                    <button type="submit">Submit</button>
                                   </p>
                                 </form>
                               </div>
                             </div>
                           </div>
+
+                          <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+                          <script src=".//scripts/main.js"></script>
      </body>
- <footer class="footer">
-        <!--Copyright Section-->
-    <div align="right" class="copyright">
-        &copy; 2019 Jerrod Havig. All rights reserved.
-    </div>
-    </footer>
 </html>
