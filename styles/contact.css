@@ -1,0 +1,98 @@
+/* Grid layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  padding: 25px 0 100px 0;
+  justify-items: center;
+  background-color: rgb(80, 80, 80);
+  box-shadow: 0 0 20px 0 #ddd;
+}
+
+/* Full Name, Your Email, and Subject boxes */
+input {
+  width: 500px;
+  height: 35px;
+  color: #111;
+  background: white;
+  font-size: 1rem;
+  padding: 5px;
+  border: solid #5779b8 2.5px;
+  box-shadow: 0 0 25px 0 #111;
+}
+
+/* Message box */
+textarea {
+  width: 500px;
+  height: 100px;
+  font-size: 1rem;
+  padding: 5px;
+  border: solid #5779b8 2.5px;
+  box-shadow: 0 0 25px 0 #111;
+}
+
+/* Button */
+button {
+  display: inline-block;
+  border: none;
+  width: 512px;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s ease;
+  background-color: #ddd;
+  color: black;
+  border: solid #5779b8 2.5px;
+  box-shadow: 0 0 25px 0 #111;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #5779b8;
+  color: white;
+  box-shadow: 0 0 25px 0 #111;
+}
+
+/* Contact Form Responsiveness */
+@media screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    padding: 25px 0 100px 0;
+    justify-items: auto;
+    background-color: rgb(80, 80, 80);
+    box-shadow: 0 0 20px 0 #ddd;
+  }
+  input {
+    width: 350px;
+    height: 35px;
+    color: #111;
+    background: white;
+    font-size: 1rem;
+    padding: 5px;
+    border: solid #5779b8 2.5px;
+    box-shadow: 0 0 25px 0 #111;
+  }
+  textarea {
+    width: 350px;
+    height: 100px;
+    font-size: 1rem;
+    padding: 5px;
+    border: solid #5779b8 2.5px;
+    box-shadow: 0 0 25px 0 #111;
+  }
+  button {
+    display: inline-block;
+    border: none;
+    width: 362px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.4s ease;
+    background-color: #ddd;
+    color: black;
+    border: solid #5779b8 2.5px;
+    box-shadow: 0 0 25px 0 #111;
+  }
+}

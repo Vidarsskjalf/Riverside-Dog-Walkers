@@ -1,17 +1,18 @@
+/* Nav bar */
 @media screen and (max-width: 600px) {
   ul.topnav li.right,
   ul.topnav li {
     float: none;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .topnav .search-container {
+  .topnav {
     float: none;
   }
   .topnav a,
-  .topnav input[type="text"],
-  .topnav .search-container button {
+  .topnav {
     float: none;
     display: block;
     text-align: left;
@@ -19,11 +20,9 @@
     margin: 0;
     padding: 14px;
   }
-  .topnav input[type="text"] {
-    border: 1px solid #ccc;
-  }
 }
 
+/* Hero Text */
 @media screen and (max-width: 600px) {
   .hero-text {
     text-align: center;

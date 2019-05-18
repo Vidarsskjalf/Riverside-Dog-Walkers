@@ -1,3 +1,4 @@
+/* Grid Layout */
 .wrapper {
   display: grid;
   grid-template-columns: 30% 30% 30%;
@@ -6,11 +7,24 @@
 
 .wrapper > div {
   background: rgb(138, 139, 141);
+  box-shadow: 0 0 10px 0 #111;
   padding: 1em;
 }
 
+/* Responsive Grid Layout */
 @media screen and (max-width: 600px) {
   .wrapper {
     grid-template-columns: 1fr;
   }
+}
+
+/* Items to bring list */
+span ul li {
+  border-right: none;
+  padding-left: 5px;
+}
+
+/* Hours table */
+table {
+  padding-left: 1em;
 }

@@ -1,7 +1,27 @@
 @import "../styles/main.css";
 
+* {
+  box-sizing: border-box;
+}
+
+.image a {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.gallery:hover .image {
+  opacity: 0.7;
+  background-color: rgb(80, 80, 80);
+  transition: 0.4s ease-in;
+  box-shadow: 0 0 20px 0 #111;
+}
+
 div.gallery {
-  border: 1px solid #ccc;
+  border: 1px solid rgb(80, 80, 80);
 }
 
 div.gallary:hover {
@@ -17,12 +37,7 @@ div.desc {
   text-align: center;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .responsive {
-  padding-top: 10px;
   padding-right: 10px;
   float: left;
   width: 24.99999%;
